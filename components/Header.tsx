@@ -26,12 +26,15 @@ function Header() {
       {/* Right Div */}
       <div className="flex text-xs md:text-base divide-x items-center text-gray-500">
         <Link
-          href="https://www.mindula-madhuhansa.com"
+          href="https://imaginate-ten.vercel.app/"
           className="font-light px-2 text-right"
         >
           My Portfolio
         </Link>
-        <Link href="https://www.github.com" className="font-light px-2">
+        <Link
+          href="https://github.com/mindula-madhuhansa/imaginate-ai"
+          className="font-light px-2"
+        >
           Github Repo
         </Link>
       </div>

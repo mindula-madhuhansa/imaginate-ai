@@ -49,7 +49,7 @@ function Images() {
             </div>
             <Image
               src={image.url}
-              alt={image.name}
+              alt=""
               width={800}
               height={800}
               className="w-full rounded-sm shadow-2xl drop-shadow-lg -z-10"

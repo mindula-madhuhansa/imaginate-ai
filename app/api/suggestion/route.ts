@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 export async function GET(request: Request) {
   const response = await fetch(
     process.env.NEXT_PUBLIC_GET_CHAT_GPT_SUGGESTION_API_URL!,

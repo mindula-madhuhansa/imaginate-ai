@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 export async function GET(request: Request) {
   const response = await fetch(process.env.NEXT_PUBLIC_GET_IMAGES_API_URL!, {
     cache: "no-store",

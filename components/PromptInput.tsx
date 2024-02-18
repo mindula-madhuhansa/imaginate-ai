@@ -1,4 +1,5 @@
 "use client";
+export const dynamic = "force-dynamic";
 
 import fetchImages from "@/lib/fetchImages";
 import fetchSuggestionFromChatGPT from "@/lib/fetchSuggestionFromChatGPT";
@@ -14,7 +15,7 @@ function PromptInput() {
     isLoading,
     mutate,
     isValidating,
-  } = useSWR("/api/suggestion", fetchSuggestionFromChatGPT, {
+  } = useSWR("suggestion", fetchSuggestionFromChatGPT, {
     revalidateOnFocus: false,
   });
 
@@ -99,6 +100,7 @@ function PromptInput() {
           type="button"
           className="p-4 bg-blue-400 text-white transition-colors duration-200 font-bold disabled:text-gray-300 disabled:cursor-not-allowed disabled:bg-gray-400"
           onClick={() => submitPrompt(true)}
+          disabled={isLoading || isValidating}
         >
           Use Suggestion
         </button>

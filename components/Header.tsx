@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 function Header() {
@@ -6,11 +5,10 @@ function Header() {
     <header className="flex justify-between p-5 sticky top-0 bg-white z-50 shadow-md">
       {/* Left Div */}
       <div className="flex space-x-2 items-center">
-        <Image
+        <img
           src="https://links.papareact.com/4t3"
           alt="logo"
-          width={40}
-          height={40}
+          className="w-10 h-10"
         />
 
         <div>

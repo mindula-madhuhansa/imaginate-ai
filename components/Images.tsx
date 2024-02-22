@@ -47,12 +47,10 @@ function Images() {
                 {image.name.split("_").shift()?.toString().split(".").shift()}
               </p>
             </div>
-            <Image
+            <img
               src={image.url}
               alt=""
-              width={800}
-              height={800}
-              className="w-full rounded-sm shadow-2xl drop-shadow-lg -z-10"
+              className="w-full w-[800px] h-[800px] rounded-sm shadow-2xl drop-shadow-lg -z-10"
             />
           </div>
         ))}
